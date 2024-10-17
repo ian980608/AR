@@ -1,0 +1,20 @@
+<model-viewer src="lego.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" auto-rotate>
+    <button class="Hotspot" slot="hotspot-1" data-position="-0.1396380135928068m 0.7338460428528945m 0.03733030267815263m" data-normal="-0.6344009304532677m -3.4328281468619785e-16m 0.7730041781517278m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">可拆式的頭</div>
+    </button><button class="Hotspot" slot="hotspot-2" data-position="0.3951700292753188m 0.04116088591552686m -0.05431175141968785m" data-normal="-0.2211302788894527m 0.3010511940789977m 0.9276149946512737m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">可拆式的手臂</div>
+    </button><button class="Hotspot" slot="hotspot-3" data-position="0.4865999460612024m -0.138960441664231m 0.024582407296324486m" data-normal="0.005811234992141468m 0.14137396203707017m 0.9899392064191657m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">可與手臂分離的手</div>
+    </button><button class="Hotspot" slot="hotspot-4" data-position="0.10011462928541692m -0.4156662232798496m 0.007158556481019311m" data-normal="-2.175889740943027e-17m 0.09799336226510257m 0.9951870683203137m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">可拆式的腳</div>
+    </button>
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>
