@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="娃娃.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" auto-rotate>
+      <button class="Hotspot" slot="hotspot-1" data-position="-0.11693277835160379m 0.20287263359753555m 0.2123300100689655m" data-normal="-0.1961092036989236m 1.1689450510433453e-7m 0.9805820619532873m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">眼睛</div>
+      </button><button class="Hotspot" slot="hotspot-2" data-position="-0.47845925443144055m -0.06422871607822747m 0.4099003139725235m" data-normal="-0.9173748775396117m 0.38918920505778143m 0.08339722252973897m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">輪胎</div>
+      </button><button class="Hotspot" slot="hotspot-3" data-position="0.04293410938544246m -0.027885211315696268m 0.702029784793008m" data-normal="0.014466523018583541m 0.05786593388450688m 0.9982195416878127m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">嘴巴</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+  </body>
+</html>
